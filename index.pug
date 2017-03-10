@@ -1,0 +1,89 @@
+doctype html
+html
+  main
+    head
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      link(rel='stylesheet', href='/css/styles.css')
+      link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+      title
+    body
+      header
+        h1 Almundo
+      nav
+        a(href='#') Club Almundo
+        a(href='#')
+        a(href='#')
+        a(href='#')
+      nav
+        a(href='#') Hoteles
+        a(href='#') Vuelos
+        a(href='#') Vuelos + Hotel
+        a(href='#') Paquetes
+        a(href='#') Disney
+        a(href='#') Escapadas
+        a(href='#') Seguros
+        a(href='#') Autos
+        a(href='#') Cruceros
+        a(href='#') OFERTAS
+        a(href='#') Más
+      section
+        nav
+          a(href='#') Home
+          a(href='#') Hoteles
+          strong Santiago de Chile
+      section
+        header
+          h2 Nombre
+        fieldset
+          input(type='text', name='', value='')
+          label(for='') Escriba el nombre
+          button(type='button', name='button') Aceptar
+
+
+      section
+        header
+          h2 Regimen
+        fieldset
+          ul
+            li
+              label(for='reg1')
+                strong Todos los regimenes
+              input#reg1(type='checkbox', name='', value='')
+            li
+              label(for='reg2') Cama y desayuno
+              input#reg2(type='checkbox', name='', value='')
+            li
+              label(for='reg3') Solo la habitacion
+              input#reg3(type='checkbox', name='', value='')
+            li
+              label(for='reg4') Desayunos
+              input#reg4(type='checkbox', name='', value='')
+            li
+              label(for='reg5') Desayuno Buffet
+              input#reg5(type='checkbox', name='', value='')
+
+      ul
+        li
+          section
+            header
+              h2 Apartamento VR Suite
+            p Solo habitacion
+            ul
+              li icono
+              li icono
+              li icono
+
+
+        li
+          section
+            p Precio por noche por habitacion
+            p
+              | ars
+              strong 800
+            p
+              | Precio sin promo ars 1.142
+              br
+              | Impuesto y tasas no incluidos
+            a(href='#') Ver Hotel
+            p Pagar en cuotas

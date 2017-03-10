@@ -8,7 +8,9 @@
   "author": "Almundo",
   "license": "",
   "dependencies": {
-    "express": "^4.5.1"
+    "body-parser": "^1.17.1",
+    "express": "^4.5.1",
+    "pug": "^2.0.0-beta11"
   },
   "devDependencies": {
     "gulp": "^3.8.6",
