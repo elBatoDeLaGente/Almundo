@@ -5,6 +5,7 @@
 
 const gulp = require('gulp');
 const nodemon = require('gulp-nodemon');
+const sass = require('gulp-sass');
 
 /**
  * Gulp Tasks
@@ -21,4 +22,15 @@ gulp.task('nodemon', () => {
   });
 });
 
-gulp.task('default', ['nodemon']);
+gulp.task('sass', function () {
+  return gulp.src('public/sass/**/*.scss')
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(gulp.dest('build/css'));
+});
+ 
+gulp.task('sass:watch', function () {
+  gulp.watch('public/sass/**/*.scss', ['sass']);
+});
+
+gulp.task('default', ['nodemon', 'sass','sass:watch']);
+
