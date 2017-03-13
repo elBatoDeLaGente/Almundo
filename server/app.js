@@ -6,7 +6,7 @@ const serveStatic = require('serve-static');
 // parse body params and attach them to req.body
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(serveStatic('build', {'index': ['default.html', 'default.htm']}))
+app.use(serveStatic('public', {'index': ['default.html', 'default.htm']}))
 
 app.set('view engine', 'pug');
 

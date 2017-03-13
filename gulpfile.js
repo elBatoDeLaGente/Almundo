@@ -25,7 +25,7 @@ gulp.task('nodemon', () => {
 gulp.task('sass', function () {
   return gulp.src('public/sass/**/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('public/css'));
 });
  
 gulp.task('sass:watch', function () {
